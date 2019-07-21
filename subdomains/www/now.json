@@ -1,0 +1,20 @@
+{
+  "name": "devhub-www",
+  "alias": "www.devozs.com",
+  "builds": [
+    {
+      "src": "src/index.js",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/.*",
+      "dest": "src/index.js"
+    }
+  ],
+  "regions": [
+    "gru1"
+  ],
+  "version": 2
+}

@@ -1,0 +1,34 @@
+{
+  "name": "@devhub/core",
+  "version": "0.93.0",
+  "private": false,
+  "main": "dist/index.js",
+  "scripts": {
+    "compile": "tsc -b",
+    "clean": "shx rm -rf dist/* && shx rm -f *.tsbuildinfo",
+    "format": "prettier --write '{.,src/**}/*.{js,jsx,ts,tsx}'",
+    "lint": "tslint -p .",
+    "prepare": "cd .. && yarn patch-package"
+  },
+  "dependencies": {
+    "@octokit/rest": "16.20.0",
+    "axios": "0.18.0",
+    "gravatar": "1.8.0",
+    "immer": "2.1.4",
+    "json-to-graphql-query": "1.9.0",
+    "lodash": "4.17.11",
+    "moment": "2.24.0",
+    "qs": "6.6.0"
+  },
+  "devDependencies": {
+    "@octokit/webhooks": "5.3.3",
+    "@types/fbemitter": "2.0.32",
+    "@types/lodash": "4.14.123",
+    "prettier": "1.16.4",
+    "tslint": "5.14.0",
+    "tslint-config-airbnb": "5.11.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-react": "3.6.0",
+    "typescript": "3.5.1"
+  }
+}

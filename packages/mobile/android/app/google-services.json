@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "469609211779",
+    "firebase_url": "https://api-7235346773426695873-206441.firebaseio.com",
+    "project_id": "api-7235346773426695873-206441",
+    "storage_bucket": "api-7235346773426695873-206441.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469609211779:android:fcf9c70963e5cc83",
+        "android_client_info": {
+          "package_name": "com.jhipsterreactnative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469609211779-hria6occhp7uneqsgq3kvk2ec5usqqrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO46ZfffUYMEv66z_Lq2yPbMv7W2K0Ufk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469609211779-hria6occhp7uneqsgq3kvk2ec5usqqrb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
