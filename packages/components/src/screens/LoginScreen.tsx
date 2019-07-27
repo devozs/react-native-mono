@@ -27,8 +27,12 @@ import {
   tryParseOAuthParams,
 } from '../utils/helpers/auth'
 
-import { GoogleSignin, GoogleSigninButton, statusCodes, User } from 'react-native-google-signin';
-
+import {
+  GoogleSignin,
+  GoogleSigninButton,
+  statusCodes,
+  User,
+} from 'react-native-google-signin'
 
 const logo = require('@devhub/components/assets/logo_circle.png') // tslint:disable-line
 
@@ -103,11 +107,9 @@ const styles = StyleSheet.create({
   },
 })
 
-type ErrorWithCode = Error & { code?: string };
+type ErrorWithCode = Error & { code?: string }
 
 export const LoginScreen = React.memo(() => {
-
-
   const [isExecutingOAuth, setIsExecutingOAuth] = useState(false)
 
   const isLoggingIn = useReduxState(selectors.isLoggingInSelector)
@@ -122,7 +124,7 @@ export const LoginScreen = React.memo(() => {
   // handle oauth flow without popup
   // that passes the token via query string
   useEffect(() => {
-    ; (async () => {
+    ;(async () => {
       const currentURL = await Linking.getCurrentURL()
       const querystring = url.parse(currentURL).query || ''
       const query = qs.parse(querystring)
@@ -180,7 +182,7 @@ export const LoginScreen = React.memo(() => {
     const message = error && error.message
     alert(
       `Login failed. Please try again. ${
-      message ? ` \nError: ${message}` : ''
+        message ? ` \nError: ${message}` : ''
       }`,
     )
   }, [error])
@@ -212,19 +214,16 @@ export const LoginScreen = React.memo(() => {
   }
 
   return (
-
     <Screen>
       <FullHeightScrollView
         alwaysBounceVertical={false}
         style={styles.container}
         contentContainerStyle={styles.contentContainer}
       >
-
         <View style={styles.header} />
 
         <View style={styles.mainContentContainer}>
           <Spacer height={contentPadding} />
-
 
           <Link
             analyticsCategory="loginscreen"
@@ -261,8 +260,6 @@ export const LoginScreen = React.memo(() => {
             style={styles.button}
             title="Sign in with GitHub"
           />
-
-
         </View>
 
         <Spacer height={contentPadding} />
