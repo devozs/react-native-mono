@@ -21,7 +21,7 @@
     "formik": "2.0.1-rc.5",
     "gravatar": "1.8.0",
     "hoist-non-react-statics": "3.3.0",
-    "immer": "2.1.4",
+    "immer": "9.0.6",
     "lodash": "4.17.11",
     "moment": "2.24.0",
     "polished": "3.0.3",
