@@ -17,7 +17,7 @@
     "immer": "2.1.4",
     "json-to-graphql-query": "1.9.0",
     "lodash": "4.17.11",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "qs": "6.6.0"
   },
   "devDependencies": {
