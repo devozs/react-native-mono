@@ -25,7 +25,7 @@
     "lodash": "4.17.11",
     "moment": "2.24.0",
     "polished": "3.0.3",
-    "qs": "6.6.0",
+    "qs": "6.6.1",
     "react": "16.8.6",
     "react-helmet-async": "0.2.0",
     "react-native": "0.59.8",
